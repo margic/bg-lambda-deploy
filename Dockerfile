@@ -6,3 +6,5 @@ RUN pip install awscli
 RUN yum -q -e 0 -y update && \
     yum -q -e 0 -y install git && \
     yum -q -e 0 -y clean all
+
+RUN mkdir -p $GOPATH/bin && curl https://glide.sh/get | sh
