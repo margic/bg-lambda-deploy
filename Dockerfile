@@ -8,3 +8,4 @@ RUN yum -q -e 0 -y update && \
     yum -q -e 0 -y clean all
 
 RUN mkdir -p $GOPATH/bin && curl https://glide.sh/get | sh
+RUN go get -u github.com/golang/dep/cmd/dep
